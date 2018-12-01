@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 .botui-container{
-  font-size:14px;
+  font-size:16px;
   background-color:#fff;
   font-family:"Open Sans",sans-serif}
 
@@ -9,14 +9,14 @@
   padding:10px 20px}
 
 .botui-actions-container{
-  padding:10px 20px}
+  padding:20px 20px}
 
 .botui-message{
   min-height:30px}
 
 .botui-message-content{
-  padding:7px 13px;
-  border-radius:15px;
+  padding:15px 20px;
+  border-radius:12px;
   color:#595a5a;
   background-color:#ebebeb}
 
