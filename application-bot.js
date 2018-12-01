@@ -2,23 +2,23 @@ var botui = new BotUI('botui-app') // id of container
 
 botui.message.bot({ // show first message
   delay: 200,
-  content: 'hello'
+  content: 'Hi! I\'m Tiffany bot'
 }).then(() => {
   return botui.message.bot({ // second one
     delay: 1000, // wait 1 sec.
-    content: 'how are you?'
+    content: 'Are you here to see my Cornell Tech MBA Application?'
   })
 }).then(() => {
   return botui.action.button({ // let user do something
     delay: 1000,
     action: [
       {
-        text: 'Good',
-        value: 'good'
+        text: 'Yes!',
+        value: 'yes'
       },
       {
-        text: 'Really Good',
-        value: 'really_good'
+        text: 'Your what?',
+        value: 'your_what'
       }
     ]
   })
