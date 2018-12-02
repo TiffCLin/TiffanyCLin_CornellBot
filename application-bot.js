@@ -1,16 +1,20 @@
 var botui = new BotUI('botui-app') // id of container
 
-botui.message.add({
-  delay: 300,
-  content: 'Hello from bot.'
-});
 
 botui.message.bot({ // show first message
-  delay: 200,
-  content: 'Hi! I\'m Tiffany Lin!'
+  loading: 500,
+  delay: 500,
+  content: 'Hi!'
 }).then(() => {
   return botui.message.bot({ // second one
-    delay: 1000, // wait 1 sec.
+    delay: 700,
+    loading: 700,
+    content: 'I\'m Tiffany Lin'
+  })
+}).then(() => {
+  return botui.message.bot({ // second one
+    delay: 1000,
+    loading: 500,
     content: 'Are you here to see my Cornell Tech MBA Application?'
   })
 }).then(() => {

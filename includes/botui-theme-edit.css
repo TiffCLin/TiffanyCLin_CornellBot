@@ -33,7 +33,7 @@
   line-height:1.3}
 
 .botui-message-content.loading{
-  background-color:rgba(206,206,206,.5);
+  background-color:rgba(222,99,98,.5);
   line-height:1.3;
   text-align:center}
 
@@ -116,7 +116,7 @@
   height:.5rem;
   border-radius:.5rem;
   display:inline-block;
-  background-color:#919292}
+  background-color:#EB8473}
 
 .dot:nth-last-child(1){
   margin-left:.3rem;
@@ -132,12 +132,12 @@
 @keyframes loading{
   0%{
     transform:translate(0,0);
-    background-color:#ababab}
+    background-color:#F3997D}
   25%{
     transform:translate(0,-3px)}
   50%{
     transform:translate(0,0);
-    background-color:#ababab}
+    background-color:#F9A985}
   75%{
     transform:translate(0,3px)}
   100%{transform:translate(0,0)}}
