@@ -1,5 +1,10 @@
 var botui = new BotUI('botui-app') // id of container
 
+botui.message.add({
+  delay: 300,
+  content: 'Hello from bot.'
+});
+
 botui.message.bot({ // show first message
   delay: 200,
   content: 'Hi! I\'m Tiffany bot'
