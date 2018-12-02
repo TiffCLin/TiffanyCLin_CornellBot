@@ -1,7 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
 
 .botui-container{
-  font-size:16px;
+  font-size:24px;
+  font-weight: 300;
   background-color: rbga(0,0,0,0);
   font-family:"Source Sans Pro",sans-serif;
   height: 100vh;}
@@ -11,7 +12,7 @@
 
 .botui-actions-container{
   padding:20px 20px;
-  float: right;}
+  text-align: center;}
 
 .botui-message{
   min-height:30px}
@@ -19,8 +20,9 @@
 .botui-message-content{
   padding:15px 20px;
   border-radius:15px;
-  color:#595a5a;
-  background-color:#ebebeb}
+  color:#ffffff;
+  background-color:#ebebeb;
+  background-image: linear-gradient(-45deg, #FF4D43, #FE9023);}
 
 .botui-message-content.human{
   color:#f7f8f8;
@@ -68,8 +70,8 @@
   cursor:pointer;
   font-size:14px;
   font-weight:500;
-  padding:7px 15px;
-  border-radius:4px;
+  padding:12px 15px;
+  border-radius:10px;
   font-family:"Source Sans Pro",sans-serif;
   background:#777979;
   box-shadow:2px 3px 4px 0 rgba(0,0,0,.25)}

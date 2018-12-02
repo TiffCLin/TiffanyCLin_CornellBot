@@ -7,7 +7,7 @@ botui.message.add({
 
 botui.message.bot({ // show first message
   delay: 200,
-  content: 'Hi! I\'m Tiffany bot'
+  content: 'Hi! I\'m Tiffany Lin!'
 }).then(() => {
   return botui.message.bot({ // second one
     delay: 1000, // wait 1 sec.
