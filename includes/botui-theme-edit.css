@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|IBM+Plex+Sans:300,400);
 
 .botui-container{
-  font-size:24px;
+  font-size:18px;
   font-weight: 300;
   background-color: rbga(0,0,0,0);
-  font-family:"Source Sans Pro",sans-serif;
+  font-family:"IBM Plex Sans", "Source Sans Pro",sans-serif;
   height: 100vh;}
 
 .botui-messages-container{
@@ -19,14 +19,15 @@
 
 .botui-message-content{
   padding:15px 20px;
-  border-radius:15px;
-  color:#ffffff;
-  background-color:#ebebeb;
-  background-image: linear-gradient(-45deg, #FF4D43, #FE9023);}
+  border-radius:17px;
+  color:#353535;
+  background-color:#FFB88C;
+  background-image: linear-gradient(45deg,#FCE5D7, #FDDECB);}
 
 .botui-message-content.human{
   color:#f7f8f8;
-  background-color:#919292}
+  background-color:#919292;
+  background-image: linear-gradient(-45deg,#FFB88C, #FFC4A0);}
 
 .botui-message-content.text{
   line-height:1.3}
@@ -74,6 +75,7 @@
   border-radius:10px;
   font-family:"Source Sans Pro",sans-serif;
   background:#777979;
+  background-image: linear-gradient(-45deg,#FFB88C, #FFC4A0);
   box-shadow:2px 3px 4px 0 rgba(0,0,0,.25)}
 
 .botui-actions-text-select{
