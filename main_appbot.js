@@ -120,7 +120,6 @@ botui.message
           content: 'Which topic area would you like to hear about first?'
         })
       })
-      options();
 
     }
   })
