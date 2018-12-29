@@ -3,7 +3,6 @@
 
 // create instance of chatbot
 var botui = new BotUI('botui-app')
-var uname = ""
 
 // Introduction
 botui.message
@@ -90,7 +89,7 @@ botui.message
         return botui.message.bot({
           delay: 700,
           loading: true,
-          content: 'First of all, thank you so much for taking the time to review my application, ' + uname,
+          content: 'First of all, thank you so much for taking the time to review my application!'
         })
       })
       .then(() => {
