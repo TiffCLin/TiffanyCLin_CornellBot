@@ -50,7 +50,6 @@ botui.message
   })
   .then(res => {
     return botui.message.bot({
-      uname = res.value;
       delay: 1000,
       loading: true,
       content: 'Nice to meet you, ' + res.value + '!',
