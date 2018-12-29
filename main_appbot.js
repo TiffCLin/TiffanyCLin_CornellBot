@@ -123,6 +123,12 @@ botui.message
 // Preamble
 // Lets Start --> call options
 
+//
+//
+// BEGIN FUNCTIONS
+//
+//
+
 // function: exit_one
 // Messages if user is not here to read application
 function exit_one() {
@@ -197,13 +203,13 @@ function choose_options() {
     })
     .then(res => {
       if(res.value == 'whyMBA'){
-        //whyMBA();
+        whyMBA();
       } else if(res.value == 'experience'){
-        //experience();
+        experience();
       } else if(res.value == 'future'){
-        //future();
+        future();
       } else if(res.value == 'cornelltech'){
-        //cornelltech();
+        cornelltech();
       } else if(res.value == 'end'){
         botui.message
         .bot({
@@ -228,3 +234,103 @@ function choose_options() {
       }
     })
   }
+
+// function: whyMBA
+// first of the options of conversations
+function whyMBA() {
+  botui.message
+  .bot({
+    delay: 700,
+    loading: true,
+    content: 'Ok!'
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1000,
+      loading: true,
+      content: 'Thank you for taking the time to review my application.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1500,
+      loading: true,
+      content: 'I hope you enjoyed reading it as much as I enjoyed making it.'
+    })
+  })
+}
+
+// function: experience
+// first of the options of conversations
+function experience() {
+  botui.message
+  .bot({
+    delay: 700,
+    loading: true,
+    content: 'Ok!'
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1000,
+      loading: true,
+      content: 'Thank you for taking the time to review my application.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1500,
+      loading: true,
+      content: 'I hope you enjoyed reading it as much as I enjoyed making it.'
+    })
+  })
+}
+
+// function: future
+// first of the options of conversations
+function future() {
+  botui.message
+  .bot({
+    delay: 700,
+    loading: true,
+    content: 'Ok!'
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1000,
+      loading: true,
+      content: 'Thank you for taking the time to review my application.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1500,
+      loading: true,
+      content: 'I hope you enjoyed reading it as much as I enjoyed making it.'
+    })
+  })
+}
+
+// function: cornelltech
+// first of the options of conversations
+function cornelltech() {
+  botui.message
+  .bot({
+    delay: 700,
+    loading: true,
+    content: 'Ok!'
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1000,
+      loading: true,
+      content: 'Thank you for taking the time to review my application.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1500,
+      loading: true,
+      content: 'I hope you enjoyed reading it as much as I enjoyed making it.'
+    })
+  })
+}

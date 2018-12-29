@@ -17,6 +17,12 @@ body {
   height: 100%;
 }
 
+@media only screen and (max-width: 768px){
+  #botui-app{
+    width: 100%;
+  }
+}
+
 ::placeholder{
   color: #ffffff;
 }
