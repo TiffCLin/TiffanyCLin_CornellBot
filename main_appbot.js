@@ -120,11 +120,113 @@ botui.message
           content: 'Which topic area would you like to hear about first?'
         })
       })
+      choose_options();
 
     }
   })
 
-
 // Get Name
 // Preamble
 // Lets Start --> call options
+
+// function: exit_one
+// Messages if user is not here to read application
+function exit_one() {
+
+ botui.message
+ .bot({
+     delay: 700,
+     loading: true,
+     content: 'Oh!'
+   })
+   .then(() => {
+     return botui.message.bot({
+       delay: 700,
+       loading: true,
+       content: 'Well then our conversation probably will not be that interesting to you'
+     })
+   })
+   .then(() => {
+     return botui.message.bot({
+       delay: 700,
+       loading: true,
+       content: 'But I always love finding new people who are interested in internet policy, design, or art.'
+     })
+   })
+   .then(() => {
+     return botui.message.bot({
+       delay: 700,
+       loading: true,
+       content: 'or my art insta'
+     })
+   })
+   .then(() => {
+     return botui.message.bot({
+       delay: 700,
+       //insert art IG link and image
+     })
+   })
+}
+
+// function: options
+// Provide options for the user to read through the Application
+// Options include calling the experience, future, interest, or exit_two module
+function choose_options() {
+
+  botui.action
+  .button({
+    delay: 600,
+    action: [{
+      text: 'Why an MBA? Why Cornell Tech?',
+      value: 'whyMBA'
+    }, {
+      text: 'Let\’s talk a bit about your experience',
+      value: 'experience'
+    }, {
+      text: 'What do you want to do after your MBA?',
+      value: 'future'
+    }, {
+      text: 'Why are you interested in an MBA at Cornell Tech and what would you bring to the community?',
+      value: 'cornelltech'
+    }, {
+      text: 'I think that\’s all for now!',
+      value: 'end'
+    }]
+  })
+  .then(res => {
+    if(res.value == 'whyMBA'){
+      //whyMBA();
+    }
+    if(res.value == 'experience'){
+      //experience();
+    }
+    if(res.value == 'future'){
+      //future();
+    }
+    if(res.value == 'cornelltech'){
+      //cornelltech();
+    }
+    if(res.value == 'end'){
+      botui.message
+      .bot({
+        delay: 700,
+        loading: true,
+        content: 'Ok!'
+      })
+      .then(() => {
+        return botui.message.bot({
+          delay: 700,
+          loading: true,
+          content: 'Thank you for taking the time to review my application.''
+        })
+      })
+      .then(() => {
+        return botui.message.bot({
+          delay: 700,
+          loading: true,
+          content: 'I hope you enjoyed reading it as much as I enjoyed making it.'
+        })
+      })
+    }
+  })
+}
