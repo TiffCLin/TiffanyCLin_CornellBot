@@ -20,6 +20,7 @@
 .botui-message-content{
   padding:15px 20px;
   border-radius:17px;
+  max-width: 55s%;
   color:#353535;
   background-color:#FFB88C;
   background-image: linear-gradient(45deg,#FCE5D7, #FDDECB);}

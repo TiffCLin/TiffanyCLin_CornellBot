@@ -16,14 +16,14 @@ var exit_one = function () {
       return botui.message.bot({
         delay: 700,
         loading: true,
-        content: 'Well, I\'m afraid you might be in the wrong place'
+        content: 'Well then our conversation probably won’t be that interesting to you'
       })
     })
     .then(() => {
       return botui.message.bot({
         delay: 700,
         loading: true,
-        content: 'If you are looking for more information about some of the work I do why not try visiing my website'
+        content: 'But I always love finding new people who are interested in internet policy, design, or art.'
       })
     })
     .then(() => {
