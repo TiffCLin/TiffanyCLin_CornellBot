@@ -81,22 +81,22 @@ botui.message
     } else { //Continue with decisions
       botui.message
       .bot({
-        delay: 400,
+        delay: 700,
         loading: true,
         content: 'Great!'
       })
       .then(() => {
         return botui.message.bot({
-          delay: 700,
+          delay: 1200,
           loading: true,
           content: 'First of all, thank you so much for taking the time to review my application!'
         })
       })
       .then(() => {
         return botui.message.bot({
-          delay: 500,
+          delay: 1200,
           loading: true,
-          content: 'I\’m really excited to be applying to Cornell Tech.''
+          content: 'I\’m really excited to be applying to Cornell Tech.'
         })
       })
       .then(() => {

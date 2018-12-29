@@ -5,7 +5,6 @@
 // function: exit1
 // Messages if user is not here to read application
 var exit_one = function () {
-
   botui.message
     .bot ({
       delay: 700,
