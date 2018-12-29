@@ -2,7 +2,7 @@
 
 .botui-container{
   font-size:18px;
-  font-weight: 300;
+  font-weight: 400;
   background-color: rbga(0,0,0,0);
   font-family:"IBM Plex Sans", "Source Sans Pro",sans-serif;
   height: 80vh;}
@@ -48,22 +48,24 @@
 .botui-actions-text-input{
   border:0;
   outline:0;
+  width: 40%;
   border-radius:0;
   padding:5px 7px;
   font-family:"Source Sans Pro",sans-serif;
   background-color:transparent;
   color:#ffffff;
-  border-bottom:1px solid #ffffff}
+  border-bottom:1px solid #ffffff;
+  text-align: right;}
 
 .botui-actions-text-submit{
   color:#fff;
-  width:30px;
+  min-width:45px;
   padding:5px;
   height:30px;
   line-height:1;
   border-radius:50%;
   border:1px solid #ffffff;
-  background:#777979}
+  background:#777979;}
 
 .botui-actions-buttons-button{
   border:0;

@@ -87,7 +87,7 @@ botui.message
       })
       .then(() => {
         return botui.message.bot({
-          delay: 1200,
+          delay: 1500,
           loading: true,
           content: 'First of all, thank you so much for taking the time to review my application!'
         })
@@ -101,21 +101,14 @@ botui.message
       })
       .then(() => {
         return botui.message.bot({
-          delay: 1200,
+          delay: 2000,
           loading: true,
           content: 'Putting together this application was a unique opportunity for me to explore different methods of communication.'
         })
       })
       .then(() => {
         return botui.message.bot({
-          delay: 700,
-          loading: true,
-          content: 'Alright, I am eager to get started and hope you are as well.'
-        })
-      })
-      .then(() => {
-        return botui.message.bot({
-          delay: 500,
+          delay: 1500,
           loading: true,
           content: 'Which topic area would you like to hear about first?'
         })
@@ -142,14 +135,14 @@ function exit_one() {
    })
    .then(() => {
      return botui.message.bot({
-       delay: 2000,
+       delay: 1500,
        loading: true,
        content: 'Well then our conversation probably will not be that interesting to you'
      })
    })
    .then(() => {
      return botui.message.bot({
-       delay: 2000,
+       delay: 1500,
        loading: true,
        content: 'But I always love finding new people who are interested in internet policy, design, or art.'
      })
@@ -220,14 +213,14 @@ function choose_options() {
         })
         .then(() => {
           return botui.message.bot({
-            delay: 700,
+            delay: 1000,
             loading: true,
             content: 'Thank you for taking the time to review my application.'
           })
         })
         .then(() => {
           return botui.message.bot({
-            delay: 700,
+            delay: 1500,
             loading: true,
             content: 'I hope you enjoyed reading it as much as I enjoyed making it.'
           })
