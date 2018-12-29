@@ -142,14 +142,14 @@ function exit_one() {
    })
    .then(() => {
      return botui.message.bot({
-       delay: 700,
+       delay: 2000,
        loading: true,
        content: 'Well then our conversation probably will not be that interesting to you'
      })
    })
    .then(() => {
      return botui.message.bot({
-       delay: 700,
+       delay: 2000,
        loading: true,
        content: 'But I always love finding new people who are interested in internet policy, design, or art.'
      })
