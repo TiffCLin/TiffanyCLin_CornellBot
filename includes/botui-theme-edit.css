@@ -21,7 +21,7 @@
   padding:20px 20px;
   text-align: center;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   bottom: 0;}
 
 .botui-message{
