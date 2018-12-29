@@ -174,25 +174,19 @@ function exit_one() {
 
 function choose_options() {
 
-  botui.message
-  .bot({
-      delay: 700,
-      loading: true,
-      content: 'Oh!'
-    })
-    .then(() => {
-      return botui.action.button({
-        delay: 600,
-        action: [{
-          text: 'Why an MBA? Why Cornell Tech?',
-          value: 'whyMBA'
-        }, {
-          text: 'Let\’s talk a bit about your experience',
-          value: 'experience'
-        }, {
-          text: 'What do you want to do after your MBA?',
-          value: 'future'
-        }, {
+  botui.action
+  .button({
+      delay: 600,
+      action: [{
+        text: 'Why an MBA? Why Cornell Tech?',
+        value: 'whyMBA'
+      }, {
+        text: 'Let\’s talk a bit about your experience',
+        value: 'experience'
+      }, {
+        text: 'What do you want to do after your MBA?',
+        value: 'future'
+      }, {
           text: 'Why are you interested in an MBA at Cornell Tech and what would you bring to the community?',
           value: 'cornelltech'
         }, {
@@ -200,7 +194,6 @@ function choose_options() {
           value: 'end'
         }]
       })
-    })
     .then(res => {
       if(res.value == 'whyMBA'){
         whyMBA();
