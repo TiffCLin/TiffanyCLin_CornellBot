@@ -51,13 +51,13 @@ var exit_one = function () {
 // Provide options for the user to read through the Application
 // Options include calling the experience, future, interest, or exit_two module
 var options = function () {
-
-  botui.message
-    .bot ({
+  .then(() => {
+    return botui.message.bot({
       delay: 700,
       loading: true,
-      content: 'Oh!'
+      content: 'Well, I\'m afraid you might be in the wrong place'
     })
+  })
     .then(() => {
       return botui.message.bot({
         delay: 700,
