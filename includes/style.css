@@ -12,8 +12,8 @@ body {
 
 #botui-app{
   margin: 0 auto;
-  width: 50%;
-  min-height: 100%;
+  width: 65%;
+  max-width: 60%;
   height: 100%;
 }
 
@@ -25,4 +25,9 @@ body {
 
 ::placeholder{
   color: #ffffff;
+}
+
+.botimage {
+  padding: 5px;
+  border-radius: 5px;
 }
