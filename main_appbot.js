@@ -519,7 +519,7 @@ function experience() {
       return botui.message.bot({
         delay: 3500,
         loading: true,
-        content: 'Researching and writing about tech policy issues provided me a great foundation to understand what some of the key problems in tech need solving right now.'' It was through this program that I realized I wanted to transition my career into the private sector and into a product focused role.'
+        content: 'Researching and writing about tech policy issues provided me a great foundation to understand what some of the key problems in tech need solving right now.'
       })
     })
     .then(() => {
@@ -533,7 +533,7 @@ function experience() {
       return botui.message.bot({
         delay: 3500,
         loading: true,
-        content: '1️⃣ I loved the project management and operational side of my job. I was able to work on building the program\'s strategy, branding, recruiting, and day-to-day management and loved every moment.'
+        content: '1️⃣ I loved the project management and operational side of my job and wanted to do more of it. I was able to work on building the program\'s strategy, branding, recruiting, and day-to-day management and loved every moment.'
       })
     })
     .then(() => {
