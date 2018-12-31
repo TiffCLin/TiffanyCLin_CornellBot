@@ -732,7 +732,7 @@ function cornelltech() {
   })
   .then(() => {
     return botui.message.bot({
-      delay: 3500,
+      delay: 4000,
       loading: true,
       content: 'but even more so, I am excited at the idea of bringing to Cornell Tech the passion and energy to create spaces where people from different disciplines could share skills, ideas, and initiatives together.'
     })
