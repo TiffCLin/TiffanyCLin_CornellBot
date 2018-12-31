@@ -26,15 +26,6 @@ botui.message
       content: '![Hi](images/profile.jpeg)'
       })
     })
-  .then(() => {
-      return botui.action.button({
-        delay: 500,
-        action: [{
-          text: 'Hi!',
-          value: 'yes'
-        }]
-      })
-    })
   .then(() => { //Are they in the right place?
     return botui.message.bot({
       delay: 1000,
@@ -49,6 +40,15 @@ botui.message
       content: '🤖🤖🤖' //insert bot emoji
     })
   })
+  .then(() => {
+      return botui.action.button({
+        delay: 500,
+        action: [{
+          text: 'Hi!',
+          value: 'yes'
+        }]
+      })
+    })
   .then(() => { //Are they in the right place?
     return botui.message.bot({
       delay: 1000,
@@ -87,7 +87,7 @@ botui.message
   })
   .then(() => {
     return botui.action.button({
-      delay: 500,
+      delay: 1500,
       action: [{
         text: 'Yes!',
         value: 'yes'
@@ -107,7 +107,7 @@ botui.message
       .bot({
         delay: 700,
         loading: true,
-        content: 'Great!'
+        content: 'Great! 💯'
       })
       .then(() => {
         return botui.message.bot({
@@ -120,7 +120,7 @@ botui.message
         return botui.message.bot({
           delay: 1200,
           loading: true,
-          content: 'I\’m really excited to be applying to Cornell Tech.'
+          content: 'I\’m really excited to be applying to the Cornell Tech MBA program'
         })
       })
       .then(() => {
@@ -167,14 +167,14 @@ function exit_one() {
      return botui.message.bot({
        delay: 2000,
        loading: true,
-       content: 'But I always love finding new people who are interested in internet policy, design, or art.'
+       content: 'But I always love finding new people who are interested in internet policy, design, or art'
      })
    })
    .then(() => {
      return botui.message.bot({
        delay: 1500,
        loading: true,
-       content: 'If you\'d like, give my website visit and get in touch!'
+       content: 'If you\'d like, give my website a visit and get in touch!'
      })
    })
    .then(() => {
@@ -203,7 +203,7 @@ function choose_options() {
 
   botui.action
   .button({
-      delay: 600,
+      delay: 1500,
       action: [{
         text: 'Why an MBA? Why Cornell Tech?',
         value: 'whyMBA'
@@ -262,81 +262,74 @@ function whyMBA() {
   .bot({
     delay: 1200,
     loading: true,
-    content: 'I have always wanted to find the best ways to influence how tech could be made'
+    content: 'So, I have always wanted to harness technology to help communities around the world'
   })
   .then(() => {
     return botui.message.bot({
-      delay: 700,
+      delay: 2000,
       loading: true,
-      content: 'or used'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 1000,
-      loading: true,
-      content: 'to better communities around the world.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3000,
-      loading: true,
-      content: 'At first, I thought I wanted to do this through influencing law and policy,'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'but over the last three years, I\'ve realized that my technical, design, and operational interests are better aligned with the private sector,'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3000,
-      loading: true,
-      content: 'working more directly with products, finding ways to bridge between developers and those working on policy'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3000,
-      loading: true,
-      content: 'and finding ways to bridge between developers and those working on policy.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 1000,
-      loading: true,
-      content: 'This is what inspired me to pursue an MBA.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'While I have a bit of a technical background, and I have the research and operational background in policy, I know that in order to do the things I want, I need to become more and more inspired by those around me to transition into the proper management and business foundation.'
+      content: 'At first, I thought I wanted to do this through influencing tech law and policy'
     })
   })
   .then(() => {
     return botui.message.bot({
       delay: 2000,
       loading: true,
-      content: 'I know that in order to do the things I want,'
+      content: '⚖️'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 1500,
+      loading: true,
+      content: 'but over the last three years, I\'ve realized that my technical, design, and operational interests are better aligned with building products and programs'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 4000,
+      loading: true,
+      content: 'I want to be working more directly with products, getting input into the design and development decisions, and finding ways to bridge between developers and those working on policy'
     })
   })
   .then(() => {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'I need to build a foundation in business and technology. That way I can transition into the proper management and business roles where I can work directly with products, and pursue my ambitions of creating socially responsible tech.'
+      content: 'I have the research and policy background to understand the longer term societal implications of technology, along with an understanding of the technical pieces,'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3500,
+      loading: true,
+      content: 'but I know that in order to do the things I want'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3500,
+      loading: true,
+      content: 'to influence tech products to be more socially responsible and sustainable'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3500,
+      loading: true,
+      content: 'I need to build a strong foundation in business strategy, operations, and management'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3500,
+      loading: true,
+      content: 'This is what inspired me to pursue an MBA'
     })
   })
   .then(() => {
     return botui.action.button({
-      delay: 600,
+      delay: 1000,
       action: [{
         text: 'But why Cornell Tech?',
         value: 'why'
@@ -347,7 +340,7 @@ function whyMBA() {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'I fell in love with Cornell Tech when I attended the campus for one of the information sessions'
+      content: 'I fell in love with the program after attending one of the information sessions'
     })
   })
   .then(res => {
@@ -361,14 +354,22 @@ function whyMBA() {
     return botui.message.bot({
       delay: 2500,
       loading: true,
-      content: 'but hearing Raymond Lutzy talk about the breadth of hands-on studios and interdisciplinary classes really cemented my interest.'
+      content: 'but hearing Raymond Lutzy talk about the breadth of hands-on studios and interdisciplinary classes really cemented my interest'
     })
   })
   .then(res => {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'It was great to hear how excited other students were about impact of the studio courses. I love the idea of getting a chance right away to work with companies right in New York City.'
+      content: 'I love the idea of the studio courses, getting a chance right away to work with companies right in New York City.'
+    })
+  })
+  .then(() => {
+    return botui.action.button({
+      delay: 1000,
+      action: [{
+        text: '🗽',
+      }]
     })
   })
   .then(res => {
@@ -382,14 +383,7 @@ function whyMBA() {
     return botui.message.bot({
       delay: 2500,
       loading: true,
-      content: 'having an interdisciplinary background myself,'
-    })
-  })
-  .then(res => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'I like the idea of taking courses along with business, LL.M., and engineering students.'
+      content: 'having an interdisciplinary background myself, I like the idea of taking these hands-on studios along with other business, LL.M., and engineering students.'
     })
   })
   .then(res => {
@@ -401,16 +395,16 @@ function whyMBA() {
   })
   .then(res => {
     return botui.message.bot({
-      delay: 3500,
+      delay: 4500,
       loading: true,
-      content: 'No where else does it seem like there are these opportunities to build up that community in an educational setting than at the Cornell Tech campus, and I am excited at the opportunity to be a part of that.'
+      content: 'No other program provides such a close-knit opportunity to build an interdisciplinary community through both classes and extra-curriculars,'
     })
   })
   .then(res => {
     return botui.message.bot({
-      delay: 3500,
+      delay: 4500,
       loading: true,
-      content: 'and I am excited at the opportunity to be a part of that.'
+      content: 'and I absolutely want to be a part of that.'
     })
   })
   .then(() => {
@@ -425,120 +419,192 @@ function experience() {
   .bot({
     delay: 1200,
     loading: true,
-    content: ' I have loved technology and have been excited about its potential for as long as I can remember. I started building my own websites when I was 13,  teaching myself HTML, CSS, and PHP.'
+    content: 'Often inspired by science fiction, I have always wanted to figure out the best ways in which technology could be used to benefit society'
   })
   .then(() => {
+      return botui.message.bot({
+        delay: 1500,
+        loading: true,
+        content: ' (or prevent some of the more dystopian stories from coming true).'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 4500,
+        loading: true,
+        content: 'That ambition is what led me to initially pursue tech policy over the last three years at the Berkman Klein Center.'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: 'There, I had the opportunity to conduct research along with manage projects on issues on digital security, artificial intelligence, privacy, and platform regulation.'
+      })
+    })
+    .then(() => {
+      return botui.action.button({
+        delay: 1000,
+        action: [{
+          text: '🤓',
+        }]
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 2000,
+        loading: true,
+        content: 'I was in a unique position, spending half of my time on research and writing on key policy issues'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 5000,
+        loading: true,
+        content: 'For example, I co-wrote a paper on the challenges law enforcements around the world were facing in accessing data (even when they had a warrant) needed to investigate criminal cases'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 1500,
+        loading: true,
+        content: '[![my website](images/cbdar.png)](https://cyber.harvard.edu/publications/2017/09/berklett)'
+      })
+    })
+    .then(() => {
+      return botui.action.button({
+        delay: 1000,
+        action: [{
+          text: '👍',
+        }]
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 5000,
+        loading: true,
+        content: 'The other half of my time, I spent working with a team to develop an interdisciplinary program that brought together academics, developers, managers, and journalists'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: 'This cohort would develop products or projects meant to tackle a key tech policy issue like digital security or ethics in artificial intelligence.'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: '(If you would like to read more about the program, their website is here)'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: '[![Assembly](images/assembly.png)](https://bkmla.org/)'
+      })
+    })
+    .then(() => {
+      return botui.action.button({
+        delay: 1000,
+        action: [{
+          text: '👍',
+        }]
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: 'Researching and writing about tech policy issues provided me a great foundation to understand what some of the key problems in tech need solving right now.'' It was through this program that I realized I wanted to transition my career into the private sector and into a product focused role.'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: 'But working on the Assembly program helped me realize two things:'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: '1️⃣ I loved the project management and operational side of my job. I was able to work on building the program\'s strategy, branding, recruiting, and day-to-day management and loved every moment.'
+      })
+    })
+    .then(() => {
+      return botui.message.bot({
+        delay: 3500,
+        loading: true,
+        content: '2️⃣ I could use my skills to influence tech more directly through working on products. I was lucky to work along side industry managers and at times executives of tech companies. I listened to what they did in their positions and realized I wanted to do what they did.'
+      })
+    })
+    .then(() => {
+      return botui.action.button({
+        delay: 1000,
+        action: [{
+          text: '💡',
+        }]
+      })
+    })
+  .then(() => {
     return botui.message.bot({
-      delay: 2500,
+      delay: 3500,
       loading: true,
-      content: 'While I have not been in primarily technical positions, having that technical background has been instrumental in understanding a lot of the internet policy issues I have worked on.'
+      content: 'I have loved technology for as long as I can remember. I started building my own websites when I was 13, teaching myself HTML, CSS, and PHP.'
     })
   })
   .then(() => {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: ' As I continue to transition into a more combined business and tech roles, I know that my technical knowledge will be invaluable in being able to communicate across different product teams.'
+      content: 'While I have not been in primarily technical positions, having that technical background was instrumental in understanding a lot of the internet policy issues I worked on.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 4000,
+      loading: true,
+      content: 'When writing about surveillance issues, it was important to know not only what data sharding was, but also how it worked, before I could write about its implications for how users\' data were protected from certain types of surveillance'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 4000,
+      loading: true,
+      content: 'Outside of my tech policy work, I tried to use my web design and front end development skills to help others communicate their policy work online'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3500,
+      loading: true,
+      content: 'As I continue to transition into a more combined business and tech roles, I know that my technical knowledge will be invaluable in being able to communicate across different product teams.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 4500,
+      loading: true,
+      content: 'More recently, I have been doing independent consulting work'
     })
   })
   .then(() => {
     return botui.message.bot({
       delay: 3000,
       loading: true,
-      content: 'While working on my Tech MBA, I want to learn more from my technical peers and take my skills to the next level.'
+      content: 'I have been using my tech policy background and working with a consulting firm, GEER, to work with tech companies understand the policy landscape more clearly.'
     })
   })
   .then(() => {
     return botui.message.bot({
-      delay: 2000,
+      delay: 4000,
       loading: true,
-      content: 'I also want to use what I do know so far to help other students who may not have a technical background at all.'
-    })
-  })
-  .then(() => {
-    return botui.action.button({
-      delay: 600,
-      action: [{
-        text: 'Tell me more about your tech policy background',
-        value: 'more'
-      }]
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 700,
-      loading: true,
-      content: 'Often inspired by science fiction, I have always wanted to figure out the best ways in which technology could be used to benefit society'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 1500,
-      loading: true,
-      content: ' (or prevent some of the more dystopian stories from coming true).'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 2500,
-      loading: true,
-      content: 'That ambition is what led me to initially pursue internet policy over the last three years at the Berkman Klein Center.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'There, I had the opportunity to conduct research and also manage projects on issues on digital security, artificial intelligence, privacy, and platform regulation.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'I was in a unique position, spending half of my time on research and writing on key policy issues'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'and the other half working with a team to develop an interdisciplinary program that brought together academics, developers, managers, and journalists to develop code solutions to key policy problems.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: '(If you would like to read more about the program, their website is here)'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'link to assembly'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'It was through this program that I realized I wanted to transition my career into the private sector and into a product focused role.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'Discussing the hands-on ways that other managers and product developers can influence technology as well as build in important policy decisions made me realize that instead of critiquing the industry from the outside, I wanted to be working on product management within the industry.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3500,
-      loading: true,
-      content: 'Being exposed to researchers at the forefront of internet policy shaped how I think technology development can benefit society and I want to bring this background and knowledge into industry in a more product focused role.'
+      content: 'I have been able to learn more about tech company teams and their internal decision making.'
     })
   })
   .then(() => {
@@ -644,6 +710,20 @@ function cornelltech() {
       delay: 3000,
       loading: true,
       content: 'I also think I can bring an art and design background that I have been developing over the last 15 years.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3000,
+      loading: true,
+      content: 'While working on my Tech MBA, I want to learn more from my technical peers and take my skills to the next level.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 2000,
+      loading: true,
+      content: 'I also want to use what I do know so far to help other students who may not have a technical background at all.'
     })
   })
   .then(() => {
