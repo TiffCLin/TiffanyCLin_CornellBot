@@ -45,7 +45,6 @@ botui.message
         delay: 500,
         action: [{
           text: 'Hi!',
-          value: 'yes'
         }]
       })
     })
@@ -192,6 +191,9 @@ function exit_one() {
          value: 'yes'
        }]
      })
+    .then(() => {
+       location.reload();
+       })
   })
 }
 
@@ -633,21 +635,21 @@ function future() {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'Short term ⏱️, I want to do that by moving into the industry I\'ve been influencing from the outside by taking a product management role at a technology and media company.'
+      content: 'Short term ⏱️, I want to move into the industry I\'ve been influencing from the outside by taking a product management role at a technology and media company.'
     })
   })
   .then(() => {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'I want to start in a larger company because I want to learn the ins and outs of different parts of the business.'
+      content: 'I am hoping to start at a larger company because I want to learn the ins and outs of different parts of the business.'
     })
   })
   .then(() => {
     return botui.message.bot({
-      delay: 3000,
+      delay: 3500,
       loading: true,
-      content: 'Being in a larger company would also give me the opportunity to speak with people who work in different roles and have diverse sets of experience, making for a great learning experience for me.'
+      content: 'I want to learn the ins and outs of different parts of the business and also get the opportunity to speak with people who work in different roles and have diverse sets of experience.'
     })
   })
   .then(() => {
@@ -662,12 +664,12 @@ function future() {
     return botui.message.bot({
       delay: 1000,
       loading: true,
-      content: 'Long term ⏳, my goal is to be in a leadership position at a technology company.'
+      content: 'Long term ⏳, I would want to be in a leadership position at a technology company.'
     })
   })
   .then(() => {
     return botui.message.bot({
-      delay: 4000,
+      delay: 3000,
       loading: true,
       content: 'Whether at an established company, or in company I started myself,'
     })
@@ -711,56 +713,35 @@ function cornelltech() {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'Throughout various stages of my life, I worked at focusing more on one area, but always ended up feeling like something was missing. It took me a while to realize that this could be a strength, if I could harness it properly.'
+      content: 'Throughout various stages of my life, I would work at focusing more on one area, but always ended up feeling like something was missing. It took me a while to realize that this could be a strength, if I could harness it properly.'
     })
   })
   .then(() => {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'With my extensive policy background, I think I could bring a knowledge base that is in demand at the moment with tech companies needing (which I think is great) to be more socially and policy conscious.'
+      content: 'With regards to different skillsets, I think I could bring a combined knowledge of my various interests 🎨 💻 📚'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3500,
+      loading: true,
+      content: 'I could work with other students who may not have as much of a technical background or are interested in learning more about major tech policy issues.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3500,
+      loading: true,
+      content: 'but even more so, I am excited at the idea of bringing to Cornell Tech the passion and energy to create spaces where people from different disciplines could share skills, ideas, and initiatives together.'
     })
   })
   .then(() => {
     return botui.message.bot({
       delay: 3000,
       loading: true,
-      content: 'I also think I can bring an art and design background that I have been developing over the last 15 years.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3000,
-      loading: true,
-      content: 'While working on my Tech MBA, I want to learn more from my technical peers and take my skills to the next level.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 2000,
-      loading: true,
-      content: 'I also want to use what I do know so far to help other students who may not have a technical background at all.'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 1000,
-      loading: true,
-      content: ' What I am most excited about potentially bringing to Cornell Tech is the passion and energy to bring people together. I want to build bridges across disciplines for those who are even more steeped in those areas compared to myself,'
-    })
-  })
-  .then(() => {
-    return botui.message.bot({
-      delay: 3000,
-      loading: true,
-      content: 'and work with my peers whether in studios, classes, or outside of class to create products and initiatives that take business, engineering, and policy into account.'
-    })
-  })
-  .then(res => {
-    return botui.message.bot({
-      delay: 2700,
-      loading: true,
-      content: 'One of the main reasons why I am transitioning into industry and more management roles is because I can both understand the products and issues, and bring the right people to bring it to the world.'
+      content: 'Working with students from within the Tech MBA, LL.M., and engineering program, it would be great to continue the work from previous cohorts to build a larger community.'
     })
   })
   .then(() => {
