@@ -720,7 +720,7 @@ function cornelltech() {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'With regards to different skillsets, I think I could bring a combined knowledge of my various interests 🎨 💻 📚'
+      content: 'I think I could bring a combined knowledge of my various interests to the program 🎨 💻 📚'
     })
   })
   .then(() => {
