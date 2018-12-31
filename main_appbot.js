@@ -243,14 +243,14 @@ function choose_options() {
           return botui.message.bot({
             delay: 1000,
             loading: true,
-            content: 'Thank you for taking the time to review my application.'
+            content: 'Thank you again for taking the time to review my application.'
           })
         })
         .then(() => {
           return botui.message.bot({
             delay: 1500,
             loading: true,
-            content: 'I hope you enjoyed reading it as much as I enjoyed making it.'
+            content: 'I hope you enjoyed reading it as much as I enjoyed making it. ✨'
           })
         })
       }
@@ -713,12 +713,12 @@ function cornelltech() {
     return botui.message.bot({
       delay: 3500,
       loading: true,
-      content: 'Throughout various stages of my life, I would work at focusing more on one area, but always ended up feeling like something was missing. It took me a while to realize that this could be a strength, if I could harness it properly.'
+      content: 'Throughout my life, I would work at focusing on one area, but always ended up feeling like something was missing. It took me a while to realize that this interest in many things could be a strength, if I could harness it properly.'
     })
   })
   .then(() => {
     return botui.message.bot({
-      delay: 3500,
+      delay: 4500,
       loading: true,
       content: 'I think I could bring a combined knowledge of my various interests to the program 🎨 💻 📚'
     })
@@ -731,10 +731,18 @@ function cornelltech() {
     })
   })
   .then(() => {
+    return botui.action.button({
+      delay: 1000,
+      action: [{
+        text: '👍',
+      }]
+    })
+  })
+  .then(() => {
     return botui.message.bot({
       delay: 4000,
       loading: true,
-      content: 'but even more so, I am excited at the idea of bringing to Cornell Tech the passion and energy to create spaces where people from different disciplines could share skills, ideas, and initiatives together.'
+      content: 'But even more so, I am excited at the idea of bringing to Cornell Tech the passion and energy to create spaces where people from different disciplines could share skills, ideas, and initiatives together.'
     })
   })
   .then(() => {
@@ -742,6 +750,27 @@ function cornelltech() {
       delay: 3000,
       loading: true,
       content: 'Working with students from within the Tech MBA, LL.M., and engineering program, it would be great to continue the work from previous cohorts to build a larger community.'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3000,
+      loading: true,
+      content: 'With such a unique group, all focused on bringing innovation to the tech industry'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 3000,
+      loading: true,
+      content: 'all focused on bringing innovation to the tech industry,'
+    })
+  })
+  .then(() => {
+    return botui.message.bot({
+      delay: 2500,
+      loading: true,
+      content: 'I think it would be amazing to help build a student initiative focused on keeping those connections past the year.'
     })
   })
   .then(() => {
