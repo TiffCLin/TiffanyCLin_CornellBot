@@ -191,10 +191,10 @@ function exit_one() {
          value: 'yes'
        }]
      })
-    .then(() => {
+   })
+   .then(() => {
        location.reload();
-       })
-  })
+    })
 }
 
 // function: options
@@ -253,6 +253,18 @@ function choose_options() {
             content: 'I hope you enjoyed reading it as much as I enjoyed making it. ✨'
           })
         })
+        .then(() => {
+          return botui.action.button({
+            delay: 500,
+            action: [{
+              text: 'Start Over?',
+              value: 'yes'
+            }]
+          })
+        })
+        .then(() => {
+            location.reload();
+         })
       }
     })
   }
